@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h1>Random Number Game</h1>
+    <span>Generate a number between</span>
+    <span class="min"></span>
+    <span> and </span>
+    <span class="max"></span>
+    <br />
+    <input
+      class="rangeBar"
+      type="range"
+      min="0"
+      max="200"
+      list="steplist"
+      value="10"
+    />
+    <datalist id="steplist">
+      <option>50</option>
+      <option>100</option>
+      <option>150</option>
+      <option>200</option>
+    </datalist>
+    <br />
+    <span>Guess the number:</span>
+    <input class="selectNum" type="number" style="width: 45px;" />
+    <input class="randomFunction" type="button" value="Play!" />
+    <div class="info"></div>
+    <div class="result"></div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
